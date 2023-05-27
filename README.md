@@ -6721,7 +6721,7 @@ function library:CreateWindow(options, ...)
 			Name = "Image Asset ID",
 			Placeholder = "rbxassetid://13554153245",
 			Flag = "__Designer.Background.ImageAssetID",
-			Value = "rbxassetid://5553946656",
+			Value = "rbxassetid://13554153245",
 			Callback = updatecolorsnotween
 		}}, {"AddColorpicker", "__Designer.Colorpicker.ImageColor", backgroundsection, {
 			Name = "Image Color",
