@@ -27,13 +27,14 @@ local library = {
 		elementText = Color3.fromRGB(255, 255, 255),
 		elementBorder = Color3.fromRGB(20, 20, 20),
 		selectedOption = Color3.fromRGB(20, 20, 20),
-		unselectedOption = Color3.fromRGB(20, 20, 20)
-		hoveredOptionTop = Color3.fromRGB(20, 20, 20)
-		unhoveredOptionTop = Color3.fromRGB(20, 20, 20)
-		hoveredOptionBottom = Color3.fromRGB(20, 20, 20)
-		unhoveredOptionBottom = Color3.fromRGB(20, 20, 20)
-		tabText = Color3.fromRGB(255, 255, 255)
+		unselectedOption = Color3.fromRGB(20, 20, 20),
+		hoveredOptionTop = Color3.fromRGB(20, 20, 20),
+		unhoveredOptionTop = Color3.fromRGB(20, 20, 20),
+		hoveredOptionBottom = Color3.fromRGB(20, 20, 20),
+		unhoveredOptionBottom = Color3.fromRGB(20, 20, 20),
+		tabText = Color3.fromRGB(255, 255, 255),
 	},
+	
 	gui_parent = (function()
 		local x, c = pcall(function()
 			return game:GetService("CoreGui")
