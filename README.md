@@ -19,19 +19,19 @@ local library = {
 		background = Color3.fromRGB(5, 5, 5),
 		outerBorder = Color3.fromRGB(53, 1, 95),
 		innerBorder = Color3.fromRGB(53, 1, 95),
-		topGradient = Color3.fromRGB(20, 20, 20),
-		bottomGradient = Color3.fromRGB(20, 20, 20),
+		topGradient = Color3.fromRGB(5, 5, 5),
+		bottomGradient = Color3.fromRGB(5, 5, 5),
 		sectionBackground = Color3.fromRGB(2, 2, 2),
 		section = Color3.fromRGB(255, 255, 255),
 		otherElementText = Color3.fromRGB(255, 255, 255),
 		elementText = Color3.fromRGB(255, 255, 255),
-		elementBorder = Color3.fromRGB(20, 20, 20),
-		selectedOption = Color3.fromRGB(20, 20, 20),
-		unselectedOption = Color3.fromRGB(20, 20, 20),
-		hoveredOptionTop = Color3.fromRGB(20, 20, 20),
-		unhoveredOptionTop = Color3.fromRGB(20, 20, 20),
-		hoveredOptionBottom = Color3.fromRGB(20, 20, 20),
-		unhoveredOptionBottom = Color3.fromRGB(20, 20, 20),
+		elementBorder = Color3.fromRGB(5, 5, 5),
+		selectedOption = Color3.fromRGB(5, 5, 5),
+		unselectedOption = Color3.fromRGB(5, 5 5),
+		hoveredOptionTop = Color3.fromRGB(5, 5, 5),
+		unhoveredOptionTop = Color3.fromRGB(5, 5, 5),
+		hoveredOptionBottom = Color3.fromRGB(5, 5, 5),
+		unhoveredOptionBottom = Color3.fromRGB(5, 5, 5),
 		tabText = Color3.fromRGB(255, 255, 255),
 	},
 
@@ -325,7 +325,7 @@ do
 					library.Backdrop.Visible = library_flags["__Designer.Background.UseBackgroundImage"] and true
 					library.Backdrop.Image = resolveid(library_flags["__Designer.Background.ImageAssetID"], "__Designer.Background.ImageAssetID") or ""
 					library.Backdrop.ImageColor3 = library_flags["__Designer.Background.ImageColor"] or Color3.new(1, 1, 1)
-					library.Backdrop.ImageTransparency = (library_flags["__Designer.Background.ImageTransparency"] or 95) / 100
+					library.Backdrop.ImageTransparency = (library_flags["__Designer.Background.ImageTransparency"] or 85) / 100
 				end
 			end)
 		end
@@ -1611,7 +1611,7 @@ function library:CreateWindow(options, ...)
 	innerBackdrop.ZIndex = -1
 	innerBackdrop.Visible = library_flags["__Designer.Background.UseBackgroundImage"] and true
 	innerBackdrop.ImageColor3 = library_flags["__Designer.Background.ImageColor"] or Color3.new(1, 1, 1)
-	innerBackdrop.ImageTransparency = (library_flags["__Designer.Background.ImageTransparency"] or 95) / 100
+	innerBackdrop.ImageTransparency = (library_flags["__Designer.Background.ImageTransparency"] or 85) / 100
 	innerBackdrop.Image = resolveid(library_flags["__Designer.Background.ImageAssetID"], "__Designer.Background.ImageAssetID") or ""
 	library.Backdrop = innerBackdrop
 	tabsHolder.Name = "tabsHolder"
@@ -6733,7 +6733,7 @@ function library:CreateWindow(options, ...)
 		}}, {"AddSlider", "__Designer.Slider.ImageTransparency", backgroundsection, {
 			Name = "Image Transparency",
 			Flag = "__Designer.Background.ImageTransparency",
-			Value = 95,
+			Value = 85,
 			Min = 0,
 			Max = 100,
 			Format = "Image Transparency: %s%%",
