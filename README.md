@@ -16,9 +16,9 @@ local library = {
 	},
 	colors = {
 		main = Color3.fromRGB(255, 255, 255),
-		background = Color3.fromRGB(20, 20, 20),
-		outerBorder = Color3.fromRGB(0, 125, 150),
-		innerBorder = Color3.fromRGB(0, 125, 150),
+		background = Color3.fromRGB(5, 5, 5),
+		outerBorder = Color3.fromRGB(53, 1, 95),
+		innerBorder = Color3.fromRGB(53, 1, 95),
 		topGradient = Color3.fromRGB(20, 20, 20),
 		bottomGradient = Color3.fromRGB(20, 20, 20),
 		sectionBackground = Color3.fromRGB(2, 2, 2),
@@ -34,7 +34,7 @@ local library = {
 		unhoveredOptionBottom = Color3.fromRGB(20, 20, 20),
 		tabText = Color3.fromRGB(255, 255, 255),
 	},
-	
+
 	gui_parent = (function()
 		local x, c = pcall(function()
 			return game:GetService("CoreGui")
