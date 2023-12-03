@@ -3079,6 +3079,10 @@ function FPSBooster()
 	end
 end
 
+function SaveSettings()
+	
+end
+
 function ClickTpTool()
 	local plr = game:GetService("Players").LocalPlayer
 	local mouse = plr:GetMouse()
