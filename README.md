@@ -1319,7 +1319,7 @@ local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.
 
 local Window = Fluent:CreateWindow({
 	Title = "Manake Hub",
-	SubTitle = "| Back in 6 months "..os.date('%A, %B %d %Y'),
+	SubTitle = "|"..os.date('%A, %B %d %Y'),
 	TabWidth = 160,
 	Size = UDim2.fromOffset(600, 400),
 	Acrylic = true,
